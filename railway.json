@@ -1,0 +1,15 @@
+{
+  "build": {
+    "command": "gcc chat_server.c -o server"
+  },
+  "start": {
+    "command": "./server"
+  },
+  "services": [
+    {
+      "name": "chat-server",
+      "port": 8080,
+      "protocol": "tcp"
+    }
+  ]
+}
